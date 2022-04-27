@@ -1,12 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ReactDOM from 'react-dom'
 import 'css/style.scss'
 import App from 'components/App'
 import Login from 'components/Login'
 import NotFound from 'components/NotFound'
+import { createRoot } from "react-dom/client"
 
-ReactDOM.render(
+const rootElement = document.getElementById("root")
+const root = createRoot(rootElement)
+
+root.render(
   <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App />} />
@@ -14,5 +17,4 @@ ReactDOM.render(
       <Route element={<NotFound />} />
     </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
-);
+)
