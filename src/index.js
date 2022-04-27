@@ -1,10 +1,18 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import * as ReactDOMClient from 'react-dom/client';
-import App from 'components/App'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ReactDOM from 'react-dom'
 import 'css/style.scss'
+import App from 'components/App'
+import Login from 'components/Login'
+import NotFound from 'components/NotFound'
 
-// コンポーネントをrootにレンダリング
-const container = document.getElementById('root')
-const root = ReactDOMClient.createRoot(container)
-root.render(<App />)
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<App />} />
+      <Route path="/login" element={<Login />} />
+      <Route element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
