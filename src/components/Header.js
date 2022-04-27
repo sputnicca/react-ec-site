@@ -1,6 +1,24 @@
 import React from 'react'
 
 class Header extends React.Component {
+    renderLink() {
+        const nickname = this.props.nickname
+        if(nickname){
+            return (
+                <span className="nickname">
+                  {/* this=Headerコンポーネント */}
+                  {this.props.nickname}
+                </span>
+            )
+        } else {
+            return (
+                <>
+                  <a href="/">ログイン</a>
+                  <a href="/">登録</a>
+                </>
+            )
+        }
+    }
     render() {
         return (
             <div className="header">
@@ -9,12 +27,7 @@ class Header extends React.Component {
                         <a href="/">HOME</a>
                     </div>
                     <div className="end">
-                        <a href="/">ログイン</a>
-                        <a href="/">登録</a>
-                        <span className="nickname">
-                            {/* this=Headerコンポーネント */}
-                            {this.props.nickname}
-                        </span>
+                        {this.renderLink()}
                     </div>
                 </div>
             </div>
