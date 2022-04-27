@@ -11,6 +11,10 @@ class Header extends React.Component {
                     <div className="end">
                         <a href="/">ログイン</a>
                         <a href="/">登録</a>
+                        <span className="nickname">
+                            {/* this=Headerコンポーネント */}
+                            {this.props.nickname}
+                        </span>
                     </div>
                 </div>
             </div>
