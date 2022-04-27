@@ -4,7 +4,15 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-              <p>Header component</p>
+                <div className="grid">
+                    <div className="start">
+                        <a href="/">HOME</a>
+                    </div>
+                    <div className="end">
+                        <a href="/">ログイン</a>
+                        <a href="/">登録</a>
+                    </div>
+                </div>
             </div>
         )
     }
