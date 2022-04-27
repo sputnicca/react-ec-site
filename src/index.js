@@ -14,7 +14,7 @@ root.render(
     <Routes>
       <Route exact path="/" element={<App />} />
       <Route path="/login" element={<Login />} />
-      <Route element={<NotFound />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   </BrowserRouter>,
 )
