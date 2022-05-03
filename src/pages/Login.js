@@ -1,14 +1,25 @@
 import React from 'react'
 // import { useNavigate } from 'react-router-dom'
 const Login = () => {
+
+    // state
+    // const state = {
+    //   isLike: true
+    // }
+
+    // refs
     const emailRef = React.createRef()
     const passwordRef = React.createRef()
 
     // const history = useNavigate()
     const handleSubmit = event => {
       event.preventDefault()
-      // formのデータを取得
-      console.log(emailRef)
+      // formのデータを取得(DOM要素を取得→currentを受け取る)
+      const formData = {
+        email: emailRef.current.value,
+        password: passwordRef.current.value
+      }
+      console.log(formData)
       // 登録のロジック処理
       // 登録完了したら、HOME画面に遷移
       // history('/')
