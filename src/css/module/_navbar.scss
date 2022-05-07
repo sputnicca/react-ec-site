@@ -12,19 +12,23 @@
     font-weight: 600;
     text-transform: uppercase;
   }
-  // .search-box {
-  //   .search-input {
-  //     width: 600px;
-  //     outline: 0;
-  //   }
-  // }
-  // .cart-box {
-  //   cursor: pointer;
-  //   display: inline-block;
-  //   color: #333;
-  //   font-size: 1.2rem;
-  //   .cart-num {
-  //     margin-left: 4px;
-  //   }
-  // }
+  .search-box {
+    .search-input {
+      width: 600px;
+      outline: 0;
+    }
+    button {
+      border-top: #fff;
+      border-bottom: #fff;
+    }
+  }
+  .cart-box {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    font-size: 1.2rem;
+    .cart-num {
+      margin-left: 4px;
+    }
+  }
 }

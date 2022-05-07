@@ -8,9 +8,23 @@ class Products extends React.Component {
             <>
               <NavBar />
               <div className="products">
-                <ProductItem />
-                <ProductItem />
-                <ProductItem />
+                <div className="columns is-multiline is-desktop">
+                  <div className="column is-3">
+                    <ProductItem />
+                  </div>
+                  <div className="column is-3">
+                    <ProductItem />
+                  </div>
+                  <div className="column is-3">
+                    <ProductItem />
+                  </div>
+                  <div className="column is-3">
+                    <ProductItem />
+                  </div>
+                  <div className="column is-3">
+                    <ProductItem />
+                  </div>
+                </div>
               </div>
             </>
         )
