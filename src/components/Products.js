@@ -15,8 +15,8 @@ class Products extends React.Component {
         name: 'Air Jordan 4',
         tags: '45 colors',
         image: '',
-        price: 300000,
-        status: 'available'
+        price: 200000,
+        status: 'unavailable'
       },
       {
         name: 'Air Jordan 4',
